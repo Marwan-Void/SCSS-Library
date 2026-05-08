@@ -6,6 +6,19 @@
     -o-border-radius: $radius;
 }
 
+@mixin transition($props: 0.7s ease){
+    transition: $props;
+    -webkit-transition: $props;
+    -moz-transition: $props;
+    -ms-transition: $props;
+    -o-transition: $props;
+}
+
+@mixin animation($props){
+    animation: $props;
+    -webkit-animation: $props;
+}
+
 @mixin square($size: 10px){
     width: $size;
     height: $size;
