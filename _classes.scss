@@ -1,3 +1,6 @@
+@use "./placeholders" as *;
+@use "./mixins" as *;
+
 .pointer {
     cursor: pointer;
 }
@@ -51,4 +54,12 @@ $sizes: 2rem, 1.5rem, 1.17rem, 1rem, 0.83rem, 0.67rem;
 
 .capital {
     text-transform: capitalize;
+}
+
+.circle {
+    @extend %circle;
+}
+
+.radius0 {
+    @include border-radius(0);
 }
