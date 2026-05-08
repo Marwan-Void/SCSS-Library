@@ -1,3 +1,5 @@
+@use "./animations" as *;
+
 @mixin border-radius($radius: 8px){
     border-radius: $radius;
     -webkit-border-radius: $radius;
@@ -39,4 +41,14 @@
     grid-template-columns: repeat($columns, 1fr);
     grid-template-rows: repeat($rows, 1fr);
     gap: $gap;
+}
+
+@mixin hide-appear($props){
+    animation: hide-appear $props;
+    -webkit-animation: hide-appear $props;
+}
+
+@mixin appear($props){
+    animation: appear $props;
+    -webkit-animation: appear $props;
 }
