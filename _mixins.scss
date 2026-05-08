@@ -19,9 +19,14 @@
     -webkit-animation: $props;
 }
 
-@mixin square($size: 10px){
+@mixin square($size: 100px){
     width: $size;
     height: $size;
+}
+
+@mixin rectangle($w: 100px, $h: 50px){
+    width: $w;
+    height: $h;
 }
 
 @mixin circle($size: 100px){
