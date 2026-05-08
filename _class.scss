@@ -1,0 +1,42 @@
+.pointer {
+    cursor: pointer;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.normal-style {
+    font-style: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.normal-weight {
+    font-weight: normal;
+}
+
+$sizes: 2rem, 1.5rem, 1.17rem, 1rem, 0.83rem, 0.67rem;
+@for $i from 1 through 6 {
+    .h#{$i} {
+        font-size: nth($sizes, $i);
+    }
+}
+
+.none {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
