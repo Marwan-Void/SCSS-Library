@@ -1,0 +1,24 @@
+@mixin border-radius($radius: 8px){
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+
+@mixin square($size: 10px){
+    width: $size;
+    height: $size;
+}
+
+@mixin circle($size: 100px){
+    @include square($size);
+    @include border-radius(50%);
+}
+
+@mixin grid-layout($columns: 2, $rows: 2, $gap: 0){
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-template-rows: repeat($rows, 1fr);
+    gap: $gap;
+}
