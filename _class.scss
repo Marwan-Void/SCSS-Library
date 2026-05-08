@@ -40,3 +40,15 @@ $sizes: 2rem, 1.5rem, 1.17rem, 1rem, 0.83rem, 0.67rem;
 .visible {
     visibility: visible;
 }
+
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+.capital {
+    text-transform: capitalize;
+}
